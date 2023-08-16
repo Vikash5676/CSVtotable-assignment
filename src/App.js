@@ -66,6 +66,7 @@ function App() {
         <CSVReader
           onUploadAccepted={(results) => {
             if(results){
+              console.log(result)
               setPagelength(parseInt((results.data.length/10)+1))
               setExcelData(results.data)
             }
